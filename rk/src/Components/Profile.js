@@ -1,18 +1,28 @@
-import React from 'react'
-import {Box,Stack, FormControl,TextField } from '@mui/material'
+import {React} from 'react'
+import {Box,Button,FormControl,TextField, Typography } from '@mui/material'
 
 const Profile = () => {
+
   return (
           <Box
           sx={{ margin:"auto",marginTop:"100px",
           alignItems:"center",
-          display:"flex"
-          ,justifyContent:"center",
-          textAlign:"center",borderShadow:"5px 5px 10px white"}}>
+          display:"flex",
+          width:"400px",
+          height:"400px",
+          justifyContent:"center",
+          textAlign:"center",
+          boxShadow:"5px 5px 10px white",
+          borderRadius:"5px"}}>
          <FormControl>
-          <TextField  id="standard-basic" label="Firstname" varient="standard"  color="info"></TextField>
-          <TextField varient="contained" placeholder='Firstname'></TextField>
-          <TextField varient="standard" placeholder='Firstname'></TextField>
+          <Typography margin="10px" variant='h4' color="#030503"> login</Typography>
+          <TextField sx={{margin:"3px"}} id="standard-basic" label="Firstname" variant="standard"  color="info"></TextField>
+
+          <TextField sx={{margin:"3px"}} id="standard-basic" label="Lastname" variant="standard"  color="info"></TextField>
+
+          <TextField sx={{margin:"3px"}}id="standard-basic" label="password" variant="standard"  color="info"></TextField>
+
+          <Button sx={{margin:"20px"}} color="warning" variant="contained" >login</Button>
          </FormControl>
         </Box>
     )
