@@ -16,11 +16,29 @@ const Profile = () => {
           borderRadius:"5px"}}>
          <FormControl>
           <Typography margin="10px" variant='h4' color="#030503"> login</Typography>
-          <TextField sx={{margin:"3px"}} id="standard-basic" label="Firstname" variant="standard"  color="info"></TextField>
+          <TextField sx={{margin:"3px"}} 
+             id="standard-basic" 
+             label="Name" 
+             variant="standard"  
+             color="info">
 
-          <TextField sx={{margin:"3px"}} id="standard-basic" label="Lastname" variant="standard"  color="info"></TextField>
+          </TextField>
 
-          <TextField sx={{margin:"3px"}}id="standard-basic" label="password" variant="standard"  color="info"></TextField>
+          <TextField sx={{margin:"3px"}} 
+            id="standard-basic" 
+            label="Email" variant="standard" 
+            color="info"
+            Type="Email">
+          
+          </TextField>
+
+          <TextField sx={{margin:"3px"}}
+             id="standard-basic" 
+             label="password" 
+             variant="standard"  
+             color="info">
+          
+         </TextField>
 
           <Button sx={{margin:"20px"}} color="warning" variant="contained" >login</Button>
          </FormControl>
